@@ -1,5 +1,4 @@
-Test README.md
+# Like Lion 8th Session
 
-commit test
-
-GitKraken test
+- Web Basic
+- Python Basic
