@@ -10,3 +10,16 @@
 
 ### 3. Display and Positioning
 - codecademy Display and Positioning - CSS Display and Positioning
+
+### 4. Colors
+- codecademy Colors - CSS Color
+
+### 5. Typography
+- codecademy Typography - CSS Typography
+
+### 6. Grid
+- codecademy Grid - CSS Grid Essentials
+- codecademy Grid - Advanced CSS Grid
+
+### 7. CSS-Transitions
+- codecademy CSS-Transitions - Animation-Transitions
