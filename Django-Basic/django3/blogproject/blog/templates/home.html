@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="btn-group">
+        <a href = "/new/" class = "btn btn-info">Add Post</a>
+    </div>
+    <table class = "table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Date</th>
+                <th scope="col">Body</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--posts.all에 있는 데이터를 하나씩 post에 담음-->
+            {% for post in posts.all %}
+            <tr>
+                <!-- forloop.counter : 루프 횟수 출력 (게시글 번호가 됨) -->
+                <td>{{forloop.counter}}</td>
+                <td><a href = "{%url 'detail' post.id %}">{{ post.title }}</a></td>
+                <td>{{ post.title }}</td>
+                <td>{{ post.pub_date }}</td>
+                <!-- <td>{{ post.body }}</td> -->
+                <td>{{ post.summary }}...</td>
+                <a href = "{%url 'new' %}">Add Post</a>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
