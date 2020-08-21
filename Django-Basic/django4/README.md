@@ -26,3 +26,9 @@
 ![deleted_post](img/blog(8).png)
 
 ### portfolio 실습결과
+- 완성한 django portfolio 페이지
+![portfolio_main](img/portfolio(1).png)
+- portfolio 페이지의 메뉴바를 누르면 About을 볼 수 있음
+![portfolio_about](img/portfolio(2).png)
+- 페이지의 고양이글은 admin에서 추가한 내용
+![portfolio_admin](img/portfolio(3).png)
