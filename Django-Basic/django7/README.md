@@ -1,7 +1,7 @@
 # Django 09.08
 
 
-### 📎 강의자료
+### 📎강의자료
 
 [Django Blog Sesstion3](https://jun108059.github.io/django-blog/)
 
