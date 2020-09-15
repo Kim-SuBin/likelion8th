@@ -8,3 +8,5 @@
 - [08.18, 08.21 session](./django4)
 - [08.25 session](./django5)
 - [08.27 session](./django6)
+- [09.08 sesstion](./django7)
+- [09.10 sesstion](./django8)
