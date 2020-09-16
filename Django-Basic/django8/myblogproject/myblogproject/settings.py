@@ -37,7 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'myblog',
+
+    # allauth 추가
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    # provider 구글 페이스북 카톡 깃허브 등 소셜로그인 제공업체 추가
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -120,15 +129,25 @@ USE_TZ = True
 
 import os
 
-#static 파일들이 들어있는 경로
+# static 파일들이 들어있는 경로
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'myblog', 'static')
 ]
 
-#파일을 모아줄 위치
+# 파일을 모아줄 위치
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# allauth 기능을 사용하기 위해 추가
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
