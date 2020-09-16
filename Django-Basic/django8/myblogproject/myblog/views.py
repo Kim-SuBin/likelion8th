@@ -56,16 +56,16 @@ def delete(request, post_id):
     return redirect('/')
 
 def comments_create(request, post_id):
-    #댓글을 달 게시물에 대한 정보 가져오기
+    # 댓글을 달 게시물에 대한 정보 가져오기
     post = Post.objects.get(pk=post_id)
-    #form 태그에서 넘어온 댓글 내용 가져오기
+    # form 태그에서 넘어온 댓글 내용 가져오기
     content = request.POST.get('content')
  
-    #댓글 생성 및 저장 
+    # 댓글 생성 및 저장 
     comment = Comment(post=post, content=content)
     comment.save()
     
-    #댓글 생성후, 디테일 페이지로 redirect시킴
+    # 댓글 생성후, 디테일 페이지로 redirect시킴
     return redirect('/' + str(post.id))
 
 def comments_delete(request, post_id, comment_id):
