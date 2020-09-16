@@ -10,4 +10,5 @@
 6. [[Django] - Social Login](https://github.com/Mulgyeol/2020-Django/blob/master/social_login.md)
 7. [[Django] - Like](https://github.com/Mulgyeol/2020-Django/blob/master/like.md)
 
-> 1~5는 08.25 session이지만 복습을 위해 다시 해봤습니다 :)
+> 1~5는 08.25 session이지만 복습을 위해 다시 해봤습니다 :) <br />
+> templates 수정은 home.html이 아닌 base.html을 수정했습니다.
