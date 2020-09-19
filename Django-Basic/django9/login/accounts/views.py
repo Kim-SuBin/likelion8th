@@ -28,3 +28,9 @@ def logout(request):
 
 def index(request):
     return render(request, 'index.html')
+
+def userpage(request):
+    if request.user.is_authenticated: 
+        return render(request, 'userpage.html')
+    else:
+        return render(request, 'index.html', { 'error': 'Only site member can accesss userpage'})
